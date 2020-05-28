@@ -97,6 +97,11 @@ public class number_race extends javax.swing.JFrame {
         });
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Basic [50]", "Intermediate [100]", "Adcanced [200]" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         jButton4.setBackground(new java.awt.Color(153, 0, 0));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -429,7 +434,7 @@ public class number_race extends javax.swing.JFrame {
         num_jug++;
         if(nivel==0){
             if(num_jug<=nj+1){
-                dado1 = (int) (Math.random() * 6) + 1;
+            dado1 = (int) (Math.random() * 6) + 1;
             dado2 = (int) (Math.random() * 6) + 1;
             lbldado1.setText(Integer.toString(dado1));
             lbldado2.setText(Integer.toString(dado2));
@@ -540,7 +545,7 @@ public class number_race extends javax.swing.JFrame {
         }
         if(nivel==1){
             if(num_jug<=nj+1){
-                dado1 = (int) (Math.random() * 6) + 1;
+            dado1 = (int) (Math.random() * 6) + 1;
             dado2 = (int) (Math.random() * 6) + 1;
             lbldado1.setText(Integer.toString(dado1));
             lbldado2.setText(Integer.toString(dado2));
@@ -793,9 +798,9 @@ public class number_race extends javax.swing.JFrame {
         r3=0; 
         r4=0;
         m1=50; 
-        m2=100;
-        m3=200;
-        m4=0;
+        m2=50;
+        m3=50;
+        m4=50;
         
 
 
@@ -851,6 +856,10 @@ public class number_race extends javax.swing.JFrame {
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
     
     /**
      * @param args the command line arguments
